@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="logo-container">
+        <a href="/">
+            <img src="{{ url_for('static', filename='images/logo.jpg') }}" alt="logo.jpg">
+        </a>
+    </div>
+        <div class="cancel-container">
+            <div class="client-logo">
+                <img src="{{ url_for('static', filename='images/eze2.png') }}" alt="eze1.png">
+            </div>
+            <h1>Cancelar Agenda</h1>
+            <form>
+                <label for="reservation-number">Número de Reserva</label>
+                <input type="text" id="reservation-number" name="reservation-number" required>
+                
+                <button type="submit">Cancelar Agenda</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

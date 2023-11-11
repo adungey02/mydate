@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyDate</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles1.css') }}">
+</head>
+<body>
+    <div class="logo-container">
+        <img src="{{ url_for('static', filename='images/logo.jpg') }}" alt="logo.jpg">
+    <div class="client-logo">
+        <img src="{{ url_for('static', filename='images/eze2.png') }}" alt="eze2.png">
+        </div>
+        <button class="reserve-btn" onclick="redirectToReservar()">RESERVAR</button>
+        <p class="cancel-text"><a href="cancelar" class="cancel-link">Cancelar agenda aquí</a></p>
+    </div>
+    
+    <script>
+        function redirectToReservar() {
+            window.location.href = 'reservar';
+        }
+    </script>
+</body>
+</html>

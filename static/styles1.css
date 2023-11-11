@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #B6B6B6;
+    color: #000;
+    font-family: 'Arial', sans-serif;
+}
+
+.logo-container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.main-logo {
+    width: 150px; /* Ajusta el ancho según tus necesidades */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.client-logo img {
+    width: 230px; /* Ajusta el ancho según tus necesidades */
+    height: auto;
+    margin-top: 20px;
+}
+
+.reserve-btn {
+    background-color: #4caf50;
+    color: #000000;
+    padding: 20px 40px;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.reserve-btn:hover {
+    background-color: #45a049;
+}
+
+.cancel-text {
+    margin-top: 20px;
+    text-decoration: underline;
+}
+
+.cancel-link {
+    color: #000;
+    text-decoration: none;
+}
