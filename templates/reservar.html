@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agenda</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <script>
+        function actualizarOpciones() {
+            var profesionalSeleccionado = document.getElementById("professional").value;
+            var fechaSelect = document.getElementById("date");
+            var horaSelect = document.getElementById("time");
+        }
+    </script>
 </head>
 <body>
     <div class="logo-container">
@@ -18,6 +25,11 @@
         </div>
         <h1>Agenda</h1>
         <form>
+            <label for="professional">Profesional</label>
+            <select id="professional" name="professional">
+                <option value="opcion1">Elegir profesional</option>
+            </select>
+            
             <label for="title">Nombre</label>
             <input type="text" id="title" name="title" required>
             
