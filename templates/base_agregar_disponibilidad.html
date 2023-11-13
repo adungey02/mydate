@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Administración de profesionales{% endblock %}</title>
+
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #B6B6B6;
+            color: #ffffff;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .logo-container {
+            text-align: center;
+            margin-top: 0px;
+        }
+
+        .main-logo {
+            width: 10px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+
+        h1, h2 {
+            color: #050000;
+            text-align: center
+        }
+
+        form {
+            background-color: #000000;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgb(252, 251, 251);
+            margin-bottom: 20px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+        
+        input, select, button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+            border: 1px solid #ffffff;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: #000000;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        li {
+            background-color: #ffffff;
+            color: #000;
+            padding: 10px;
+            border: 1px solid #000000;
+            margin-bottom: 5px;
+            border-radius: 4px;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+<body>
+    <div class="logo-container">
+        <img src="{{ url_for('static', filename='images/logo.jpg') }}" alt="logo.jpg">
+    </div>
+
+{% block content %}{% endblock %}
+</body>
+</html>
