@@ -8,18 +8,16 @@ body {
 
 .logo-container {
     text-align: center;
-    margin-top: 50px;
+    margin-top: 0px;
 }
 
 .main-logo {
-    width: 150px; /* Ajusta el ancho según tus necesidades */
+    width: 100px; 
     height: auto;
-    display: block;
-    margin: 0 auto;
 }
 
 .client-logo img {
-    width: 230px; /* Ajusta el ancho según tus necesidades */
+    width: 230px;
     height: auto;
     margin-top: 20px;
 }
